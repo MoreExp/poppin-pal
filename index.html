@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/_variables.scss">
+    <script src="script.js"></script>
+    <title>Poppin' Pal</title>
+</head>
+
+<body>
+  <section id="userlogin">
+    <div class="modal fade" id="loginsection" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-warning">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Username / Email Address:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="password-text" class="col-form-label">Password:</label>
+                <input type="password" class="form-control" id="password-text"></input>
+              </div>
+              <div class="rmb">
+                <input type="checkbox" id="remember-me"></input>
+                <label for="remember-me" class="col-form-label">Remember me</label>
+              </div>
+              <div class="retrievepassword-link"><a href="#" id="retrievepassword-link" data-bs-target="#retrivesection" data-bs-toggle="modal">Forgot Password?</a></div>
+              <div class="btnpop">
+                <button type="submit" class="btn rounded-pill btn-dark">login</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="signup-link">Not a member? <a href="signup.html" id="signup-link">Sign-up now</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="retriveps" id="retriveps">
+    <div class="modal fade" id="retrivesection" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-warning">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Retrive Password</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Username</label>
+                <input type="text" class="form-control" id="recipient-name"></input>
+              </div>
+              <div class="mb-3">
+                <label for="email-text" class="col-form-label">Enter your Email:</label>
+                <input type="email" class="form-control" id="email-text">
+              </div>
+              <div class="btnpop">
+                <button type="submit" class="btn rounded-pill btn-dark" style="margin: 5px 0 0 0;">submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer" style="margin: 0 0 5px 0;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <header class="p-3 text-bg-warning sticky-top">
+        <div class="container-fluid">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img src="image/poppinpal.png" style="width: 50px;">
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="" class="nav-link px-2 text-secondary">Poppin' Pal</a></li>
+              <li><a href="#featured" class="nav-link px-2 text-white">FEATURED</a></li>
+              <li><a href="#price" class="nav-link px-2 text-white">PRODUCTS</a></li>
+              <li><a href="checkout.html" class="nav-link px-2 text-white">CHECKOUT</a></li>
+            </ul>              
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#loginsection">Login</button>
+              <a href="signup.html"><button type="button" class="btn btn-outline-dark">Sign-up</button></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="product" style="background-color: wheat;">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 mt-0">
+            <img src="image/poppinpal.png" alt="Bootstrap Themes" width="80%" height="80%" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Poppin' Pal POPCORNS</h1>
+            <p class="lead">Made With Premium Corn</p>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section id="featured">
+        <div class="container col-xxl-8 mt-5">
+        <h1>Hot Item!</h1>
+        </div>
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border">
+            <div class="col-10 col-sm-8 col-lg-6 mt-0">
+              <img src="image/featured.png" alt="Bootstrap Themes" width="80%" height="80%" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Savoury Blast Giftbox</h1>
+              <p class="lead">GIftbox includes Cheese Flavours, Salted Egg Flavour, BBQ Flavour, Original Seasalt FLavour and Seaweed Flavours</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <h2>RM53.00</h2>
+              </div>
+              <button type="button" class="btn btn-warning px-4" data-bs-toggle="modal" data-bs-target="#sblastpopcorn">Buy Now</button>
+            </div>
+            <div class="modal fade" id="sblastpopcorn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 0;">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="modal-header border-bottom-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                      <div class="row flex-lg-row align-items-center g-5 py-3">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                          <img src="image/featured.png" class="d-block mx-lg-auto img-fluid" width="800" height="600" loading="lazy">
+                        </div>
+                        <div class="col-lg-6">
+                          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Savoury Blast Giftbox</h1>
+                          <p class="lead">Fun times are better when you’ve got yummy snacks to share!</p>
+                          <h3>RM53.00</h3>
+                          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <input type="number" min="0" name="" id="">
+                            <a href="checkout.html"><button type="button" class="btn btn-warning btn-lg px-4">Add To Cart</button></a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="price">
+        <div class="container col-xxl-8 px-4 py-5">
+          <h1>Must Try!</h1>
+          <div id="carouselExampleControls" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card-wrap">
+                  <div class="card">
+                    <img src="image/caramelpop.png" alt="caramelpopcorn" style="width:100%">
+                    <div class="text-truncate"><h1>Caramel</h1></div>
+                    <p class="price">RM9.60</p>
+                    <p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#caramelpopcorn">Add to Cart</button></p>
+                  </div>
+        <div class="modal fade" id="caramelpopcorn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="modal-header border-bottom-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                  <div class="row flex-lg-row align-items-center g-5 py-3 px-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                      <img src="image/caramelpop.png" class="d-block mx-lg-auto img-fluid" width="1000" height="800" loading="lazy">
+                    </div>
+                    <div class="col-lg-6 ">
+                      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Caramel Popcorn</h1>
+                      <p class="lead">I’m that scrumptious sweetheart you’ll share with your friends. Be careful, they’ll want more, so better bring extra.</p>
+                      <h3>RM9.60</h3>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <input type="number" min="0" name="" id="">
+                        <button type="button" class="btn btn-warning btn-lg px-4">Add To Cart</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+         </div>
+        </div>
+                  <div class="card ">
+                    <img src="image/seaweed.png" alt="seaweedpopcorn" style="width:100%">
+                    <div class="text-truncate"><h1>Seaweed</h1></div>
+                    <p class="price">RM9.60</p>
+                    <p><button data-bs-toggle="modal" data-bs-target="#seaweedpopcorn">Add to Cart</button></p>
+                  </div>
+
+                  <div class="modal fade" id="seaweedpopcorn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="modal-header border-bottom-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                            <div class="row flex-lg-row align-items-center g-5 py-3 px-5">
+                              <div class="col-10 col-sm-8 col-lg-6">
+                                <img src="image/seaweed.png" class="d-block mx-lg-auto img-fluid" width="1000" height="800" loading="lazy">
+                              </div>
+                              <div class="col-lg-6">
+                                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Seaweed Popcorn</h1>
+                                <p class="lead">Have you ever tried a snack that gives you a peace of mind? I, Nori Seaweed, am both healthy and satisfying! I’m popcorn blended with natural fine seaweed. Let’s not forget I have minerals and proteins too.</p>
+                                <h3>RM9.60</h3>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                  <input type="number" min="0" name="" id="">
+                                  <button type="button" class="btn btn-warning btn-lg px-4">Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                   </div>
+                  </div>
+          
+                  <div class="card">
+                    <img src="image/saleggpop.png" alt="saltedeggpop" style="width:100%">
+                    <div class="text-truncate"><h1>Salted Egg</h1></div>
+                    <p class="price">RM11.30</p>
+                    <p><button data-bs-toggle="modal" data-bs-target="#salteggpopcorn">Add to Cart</button></p>
+                  </div>
+
+                  <div class="modal fade" id="salteggpopcorn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="modal-header border-bottom-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                            <div class="row flex-lg-row align-items-center g-5 py-3 px-5">
+                              <div class="col-10 col-sm-8 col-lg-6">
+                                <img src="image/saleggpop.png" class="d-block mx-lg-auto img-fluid" width="1000" height="800" loading="lazy">
+                              </div>
+                              <div class="col-lg-6">
+                                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Salted Egg Popcorn</h1>
+                                <p class="lead"> I’m flossy by nature. Look into my heart and you’ll find egg yolk. Taste me now and experience my wonder for yourself!</p>
+                                <h3>RM11.30</h3>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                  <input type="number" min="0" name="" id="">
+                                  <button type="button" class="btn btn-warning btn-lg px-4">Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                   </div>
+                  </div>
+          
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-wrap">
+                  <div class="card">
+                    <img src="image/bbqpop.png" alt="bbqpopcorn" style="width:100%">
+                    <div class="text-truncate"><h1>Barbeque</h1></div>
+                    <p class="price">RM9.60</p>
+                    <p><button data-bs-toggle="modal" data-bs-target="#bbqpopcorn">Add to Cart</button></p>
+                  </div>
+
+                  <div class="modal fade" id="bbqpopcorn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="modal-header border-bottom-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                            <div class="row flex-lg-row align-items-center g-5 px-5">
+                              <div class="col-10 col-sm-8 col-lg-6">
+                                <img src="image/bbqpop.png" class="d-block mx-lg-auto img-fluid" width="1000" height="800" loading="lazy">
+                              </div>
+                              <div class="col-lg-6">
+                                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Barbeque Popcorn</h1>
+                                <p class="lead">I’m good barbecue packed in a can. My peppery surprise is the excitement you’ve been waiting for!</p>
+                                <h3>RM9.60</h3>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                  <input type="number" min="0" name="" id="">
+                                  <button type="button" class="btn btn-warning btn-lg px-4">Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                   </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="image/cheesepop.png" alt="bbqpopcorn" style="width:100%">
+                    <h1 class="text-truncate">Cheese</h1>
+                    <p class="price">RM9.60</p>
+                    <p><button data-bs-toggle="modal" data-bs-target="#cheesepopcorn">Add to Cart</button></p>
+                  </div>
+
+                  <div class="modal fade" id="cheesepopcorn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="modal-header border-bottom-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                            <div class="row flex-lg-row align-items-center g-5 py-3 px-5">
+                              <div class="col-10 col-sm-8 col-lg-6">
+                                <img src="image/cheesepop.png" class="d-block mx-lg-auto img-fluid" width="1000" height="800" loading="lazy">
+                              </div>
+                              <div class="col-lg-6">
+                                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Cheese Popcorn</h1>
+                                <p class="lead">Creamy and rich, I’m generous when it comes to flavor. Take a photo with me and say “CHEESE!”</p>
+                                <h3>RM9.60</h3>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                  <input type="number" min="0" name="" id="">
+                                  <button type="button" class="btn btn-warning btn-lg px-4">Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                   </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="image/seasalt.png" alt="seasaltpopcorn" style="width:100%">
+                    <h1 class="text-truncate">Original Sea Salt</h1>
+                    <p class="price">RM8.90</p>
+                    <p><button data-bs-toggle="modal" data-bs-target="#seasaltpopcorn">Add to Cart</button></p>
+                  </div>
+
+                  <div class="modal fade" id="seasaltpopcorn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="modal-header border-bottom-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                            <div class="row flex-lg-row align-items-center g-5 py-3 px-5">
+                              <div class="col-10 col-sm-8 col-lg-6">
+                                <img src="image/seasalt.png" class="d-block mx-lg-auto img-fluid" width="1000" height="800" loading="lazy">
+                              </div>
+                              <div class="col-lg-6">
+                                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Original Sea Salt Popcorn</h1>
+                                <p class="lead">Have me and witness just how good sea salt really taste!</p>
+                                <h3>RM8.90</h3>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                  <input type="number" min="0" name="" id="">
+                                  <button type="button" class="btn btn-warning btn-lg px-4">Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="quality">
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="image/airplane.png" alt="" class="icon-image">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Imported Mushroom Popcorn</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="image/no-gmo.png" alt="" class="icon-image">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">NON-GMO CORN KERNEL</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="image/popcorn-noprev.png" alt="" class="icon-image">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">NO ADDED PRESERVATIVES</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="image/SGS-ISO-22000-UKAS_TCL_HR.jpg" class="icon-image">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">ISO 22000</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="image/SGS_MS-1480-DSM-Mark_TCL_HR.jpg" class="icon-image">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">HACCP (MS1480)</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="image/SGS_GMP_TCL_HR.jpg" class="icon-image">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">GMP CODEX</h3>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="footer">
+        <div class="container-fluid bg-warning">
+          <footer class="py-3 mt-5">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#header" class="nav-link px-2 text-body-secondary">Home</a></li>
+              <li class="nav-item"><a href="#featured" class="nav-link px-2 text-body-secondary">Featured</a></li>
+              <li class="nav-item"><a href="#price" class="nav-link px-2 text-body-secondary">Products</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+              <li class="nav-item"><a href="faqs.html" class="nav-link px-2 text-body-secondary">FAQS</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2024 Poppin' Pal, Inc</p>
+            <ul class="nav text-center justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-facebook fa-2xl"></i></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-x-twitter fa-2xl"></i></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-instagram fa-2xl"></i></a></li>
+            </ul>
+          </footer>
+        </div>
+      </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
